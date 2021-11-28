@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Query of Restaurant - Alpha by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body style="background: url(https://images.unsplash.com/photo-1523378759295-3a7b309ca5fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJhY2slMjBncm91bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60); background-size: 100%;">
+	</body>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1><i class="fas fa-heart"></i></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html" class="button">Home</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<section id="main" class="container">
+					<header>
+						<h2 style="color:black">Query Table of Restaurant</h2>
+						<p style="color:black"><i>Merge some data so we can solve the question about the restaurant.<br>
+                            We use sql server for the table and transfer to Power BI for the interpretation.</i></p>
+					</header>
+					<div class="box">
+						<h3><i>Goals</i></h3>
+						<p>We got the insight of the restaurant sales and rating with SQL Server and Power BI.</p>
+						
+						<h3><i>Data Description</i></h3>
+						<p>I’m sorry, I forgot the source of the data either from kaggle or UCI Machine learning. But <a href="RCData">here</a> is the data I’d used. This data is divided into three sections. First, the data is about the restaurant. Second, the data is about consumers. And the last is about rating for the restaurant. I suggest you read the Readme note first before looking it into a query.</p>
+						
+						<h3><i>Details of project</i></h3>
+						<h4><b>NOTE : The Visualization of power BI is not embeded here due to paid licened. But I have the file of power BI desktop here if you want to look deeper to filter or something else. </b><a href="Report.pbix">CLICK THIS.</a></h4>
+						<p>I’ve got 7 questions and I will answer with data from SQL Server and Power BI. The code of the query is on this <a href="https://github.com/hanifahrizqy/Query-Restaurant_SQL-Server/blob/main/Query%20SQL">link.</a><br>
+                         POV : In Indonesian lol<br>
+                        <br>
+                         <b>1. Bagaimana other_service berpengaruh pada rating restaurant?</b><br>
+                         <h4>The Tabel : Q1</h4>
+                         <div style="text-align: center"><img src="images/Q1.png" width="550"  /></div>
+                         <br>
+                         <h4>The Visualization</h4>
+						 <div style="text-align: center"><img src="images/FQ1.png" width="550"  /></div>
+                         <b>Interpretasi</b> : Untuk other_service dari tiap restaurant ternyata tidak berpengaruh terhadap penilaian restaurant karena dapat dilihat mayoritas tiap restaurant bernilai none atau tidak ada pelayanan lainnya. Jadi rating restaurant bisa lebih digali penyebabnya.<br>
+                         <br>
+                         <b>2. Apakah status pekerjaan(activity) mereka mempengaruhi hari pengunjungan ke restaurant?</b><br>
+                         <h4>The Tabel : Q2</h4>
+                         <div style="text-align: center"><img src="images/Q2.png" width="450" /></div>
+                         <br>
+                         <h4>The Visualization</h4>
+						 <div style="text-align: center"><img src="images/FQ2.png" width="450"  /></div>
+                         <b>Interpretasi</b> : Restaurant lebih disukai oleh pelanggan "working-class" dan pada weekend ataupun weekday tetap sama tidak ada perbedaan hari pengunjungan. Dan dapat dilihat pelanggan dengan "unemployed" tidak menyukai restaurant yang ada di kota-kota mexico dan kota suledad ini dilihat dari rating yang mereka berikan 0 atau biasa saja.Dan untuk pelanggan "?" memberikan rating restaurant cukup baik sebab itu bisa dipastikan apakah ini pelanggan dengan status baru atau tidak terdata dengan baik.<br>
+                         <br>
+                         <b>3. Makanan paling laku di tiap kota</b><br>
+                         <h4>The Tabel : Q3</h4>
+                         <div style="text-align: center"><img src="images/Q3.png" width="550" /></div>
+                         <br>
+                         <h4>The Visualization</h4>
+						 <div style="text-align: center"><img src="images/FQ3.png" width="550"  /></div>
+                         <b>Interpretasi</b> : Jika di filter terlihat makanan khas mexico yang banyak. Berbagai macam jenis makanan ada di tabel jika ingin mencari jenis makananannya tinggal di filter sesuai keinginan anda.<br>
+                         <br>
+                         <b>4. Bagaimana rating/rasa makanan di restaurant tiap kota?</b><br>
+                         <h4>The Tabel : Q4</h4>
+                         <div style="text-align: center"><img src="images/Q4.png" width="400" /></div>
+                         <br>
+                         <h4>The Visualization</h4>
+						 <div style="text-align: center"><img src="images/FQ4.png" width="400"  /></div>
+                         <b>Interpretasi</b> : Rating makanan yang paling besar ada di Jiutepac dan paling rendah ada di Ciudad Victoria<br>
+                         <br>
+                         <b>5. Jenis payment yang digunakan tiap generasi pelanggan</b><br>
+                         <h4>The Tabel : Q5</h4>
+                         <div style="text-align: center"><img src="images/Q5.png" width="350" /></div>
+                         <br>
+                         <h4>The Visualization</h4>
+						 <div style="text-align: center"><img src="images/FQ5.png" width="350"  /></div>
+                         <b>Interpretasi</b> : Dari semua jenis pembayaran yang paling sering digunakan adalah cash dan debit card. Kemudian pembayaran visa juga banyak dipakai oleh pelanggan generasi Y dan X. Untuk Mastercard dan american express hanya sesekali digunakan. Sedangkan untuk generasi baby boomers atau kelahiran 1930-1965 hanya menggunakan cash dan debit card.<br>
+                         <br>
+                         <b>6. Bagaimana service_rating pada ambience tiap restaurant?</b><br>
+                         <h4>The Tabel : Q6</h4>
+                         <div style="text-align: center"><img src="images/Q6.png" width="550" /></div>
+                         <br>
+                         <h4>The Visualization</h4>
+						 <div style="text-align: center"><img src="images/FQ6.png" width="550"  /></div>
+                         <b>Interpretasi</b> : Kebanyakan pelanggan menyukai restaurant dengan suasana familiar dan "Restaurant Las Mananitas" memiliki kenyamanan yang paling baik diantara yang lain dengan rata-rata service_ratingnya 2.<br>
+                         <br>
+                         <b>7. Rating setiap restaurant dan deskripsinya</b><br>
+                         <h4>The Tabel : Q7</h4>
+                         <div style="text-align: center"><img src="images/Q7.png" width="550" /></div>
+                         <br>
+                         <h4>The Visualization</h4>
+						 <div style="text-align: center"><img src="images/FQ7.png" width="550"  /></div>
+                         <b>Interpretasi</b> : Jika sudah menemukan makanan khas yang kalian cari. Bisa mencari deskripsi restaurant dengan sistem filter yang disediakan.</p>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://www.youtube.com/channel/UCukt78WwUn1eg4k25ILNrNg" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
+						<li><a href="http://github.com/hanifahrizqy" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://instagram.com/hanifah_rizqy/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="http://www.linkedin.com/in/hanifah-rizqy-335610185/" class="icon brands fa fa-linkedin"><span class="label">Linkedin</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">Hanifah RM & HTML5 UP </a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
